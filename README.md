@@ -1,11 +1,13 @@
 # BMX Timing
 
-Live timing for BMX track sessions, read directly from the
-track's own decoders — no per-rider Sqorz fees.
+Live timing for BMX track sessions, read directly from the track's own
+decoders — no per-rider Sqorz fees.
 
 This repository only holds installers for download — there's no source
 code here. Grab the latest version from
 **[Releases](https://github.com/DavidH667/bmx-timing-releases/releases)**.
+
+**Windows only, for now.** 
 
 ## Installing
 
@@ -21,8 +23,11 @@ code here. Grab the latest version from
 4. The first time you launch it, Windows Firewall will ask to allow
    network access — click **Allow**. This is what lets other phones and
    tablets on the same Wi-Fi view the board (see below).
-5. A browser tab opens automatically showing the track selector. Pick
-   your track (or add it, the first time) and confirm the board loads.
+5. A browser tab opens automatically showing the track selector. If
+   your track's already set up, just pick it. If not, choose **+ Add
+   new track** — the app scans your network for connected decoders and
+   walks you through confirming which timing point each one covers
+   (hill, holeshot, finish); this only needs doing once per track.
 
 That's it — from then on, just double-click the desktop shortcut before
 a session. A tray icon (bottom-right of your screen, near the clock)
@@ -39,13 +44,20 @@ same as the first install; that's normal, not a sign of a problem.
 ## Viewing the board on a phone or tablet
 
 Join the same Wi-Fi network the timing PC is on (not mobile data), then
-browse to the PC's address - it looks like `http://192.168.x.x:8000`. 
-This address can change between sessions, so always at the admin hut 
-rather than a saved bookmark.
+browse to the PC's address — it looks like `http://192.168.x.x:8000`.
+This address can change between sessions, so check with whoever's
+running timing that day for the current one rather than relying on a
+saved bookmark.
 
 ## Something not working?
 
-Get in touch with David Harkness / david.harkness.nz@gmail.com — mention 
-which version you're running (shown at the bottom of the track selector screen) 
-and roughly when the issue happened. The app keeps its own log file for
-troubleshooting, so there's usually no need to reproduce a problem live.
+Get in touch with David Harkness / david.harkness.nz@gmail.com —
+mention which version you're running (shown at the bottom of the track
+selector screen) and roughly when the issue happened. The app keeps its
+own log file for troubleshooting, so there's usually no need to
+reproduce a problem live.
+
+## Got an idea for a cool new feature?
+
+If you have a feature request for a future release, get in touch via the 
+same email address.
